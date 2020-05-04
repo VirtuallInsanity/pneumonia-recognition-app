@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, flash, redirect
 from flask_uploads import UploadSet, configure_uploads,IMAGES
 from flask_session import Session
+from werkzeug.utils import secure_filename
 
 #from tempfile import mkdtemp
 
