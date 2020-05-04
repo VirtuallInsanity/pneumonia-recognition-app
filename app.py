@@ -92,5 +92,8 @@ if __name__ == "__main__":
     app.config['SESSION_TYPE'] = 'filesystem'
 
     #app.debug = True
-    app.run(port=8000)
+    #app.run(port=8000)
 	#app.run(debug=True, port=8000)
+    port = int(os.environ.get('PORT', 5000))
+    #run the app locally on the givn port
+    app.run(host='0.0.0.0', port=port)
