@@ -3,6 +3,7 @@ keras
 numpy
 h5py
 pillow
+flask_session
 flask_uploads
 Flask==0.12
 protobuf==3.2.0
