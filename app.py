@@ -13,7 +13,7 @@ import re
 import sys
 import os
 import base64
-import cv2
+#import cv2
 sys.path.append(os.path.abspath("./model_№1"))
 from load import *
 
@@ -38,12 +38,12 @@ ROWS = 224
 COLS = 224
 
 # for vgg16
-def read_and_prep_data(image_path):
-    data = []
-    image = cv2.imread(image_path, cv2.IMREAD_COLOR)
-    image = cv2.resize(image, (ROWS,COLS), interpolation=cv2.INTER_CUBIC)
-    data.append(np.array(image))
-    return data
+# def read_and_prep_data(image_path):
+#    data = []
+#    image = cv2.imread(image_path, cv2.IMREAD_COLOR)
+#    image = cv2.resize(image, (ROWS,COLS), interpolation=cv2.INTER_CUBIC)
+#    data.append(np.array(image))
+#    return data
 
 @app.route('/')
 def index():
