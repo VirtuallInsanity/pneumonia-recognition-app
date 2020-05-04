@@ -2,17 +2,17 @@ from flask import Flask, render_template, request, flash, redirect
 from flask_uploads import UploadSet, configure_uploads,IMAGES
 from flask_session import Session
 
-from tempfile import mkdtemp
+#from tempfile import mkdtemp
 
 from keras.preprocessing import image
 from tensorflow.python.keras.backend import set_session
 #from scipy.isc import imsave, imread, imresize
 import numpy as np
-import keras.models
-import re
+#import keras.models
+#import re
 import sys
 import os
-import base64
+#import base64
 #import cv2
 sys.path.append(os.path.abspath("./model_№1"))
 from load import *
