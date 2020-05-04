@@ -8,5 +8,5 @@ flask_uploads
 Flask==1.1.2
 protobuf==3.2.0
 tensorflow==1.14.0
-Werkzeug
+Werkzeug==0.11.15
 python
