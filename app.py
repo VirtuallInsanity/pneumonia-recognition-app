@@ -55,7 +55,7 @@ def predict():
     if request.method == 'POST' and request.files['photo'].filename:  #'photo' in request.files:
         filename = photos.save(request.files['photo'])
         img_path = './'+filename
-        img = image.load_img(img_path, target_size=(ROWS, COLS), color_mode="grayscale")#remove grayscale for color
+        img = image.load_img(img_path, target_size=(ROWS, COLS), color_mode="rgb")#remove grayscale for color (rgb)
         x = image.img_to_array(img)/255.0 #with normalization
         x = np.expand_dims(x, axis=0)
         #print(x.shape)
