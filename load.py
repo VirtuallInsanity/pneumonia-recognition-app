@@ -16,7 +16,7 @@ sess = tf.Session(config=tf_config)
 graph = tf.get_default_graph()
 
 def init():
-    json_file = open('model_№1.json', 'r')#change name!
+    json_file = open('model_vgg16.json', 'r')#change name!
     loaded_model_json = json_file.read()
     json_file.close()
     
@@ -24,7 +24,7 @@ def init():
     
     set_session(sess)
     
-    loaded_model.load_weights('model_№1_weights.h5')#change name!
+    loaded_model.load_weights('model_vgg16_2_weights.h5')#change name!
     print('Model loaded')
 
     #compile
