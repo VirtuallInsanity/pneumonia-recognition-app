@@ -70,7 +70,7 @@ def predict():
                 diagnosis = 'Pneumonia'
             else:
                 probability = (1-prediction[0][0]) * 100
-                diagnosis = 'Normal'
+                diagnosis = 'No Pneumonia'
             # for multi classification
             # if prediction[0] >= prediction[1]:
             #     probability = prediction[0] * 100
